@@ -30,6 +30,6 @@
     console.log(passYear);
     console.log(passMonth);
     console.log(passDay);
-    console.log(yearOfBirthday);
+    
  }
     
