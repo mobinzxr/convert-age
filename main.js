@@ -7,14 +7,15 @@
     let monthOfBirthday = document.querySelector(".userMonthBirth")
     let dayOfBirthday = document.querySelector(".userDayBirth")
     let todayDate = document.getElementById("dateNow")
-    yearOfBirthday = Number(yearOfBirthday.value)
+    
+ function convert(){
+     yearOfBirthday = Number(yearOfBirthday.value)
     monthOfBirthday = Number(monthOfBirthday.value)
     dayOfBirthday = Number(dayOfBirthday.value)
     todayDate.innerHTML = "تاریخ امروز:"+yearnow+"/"+monthnow+"/"+daynow
     let passYear = yearnow - yearOfBirthday
     let passMonth = monthnow - monthOfBirthday
     let passDay = daynow - dayOfBirthday
- function convert(){
     if (passMonth <= 0) {
         passYear = passYear - 1
         passMonth = 12 + passMonth
